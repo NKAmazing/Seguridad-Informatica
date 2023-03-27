@@ -1,5 +1,5 @@
 '''Este es un simple ejemplo de como cifrar un mensaje usando la libreria cryptography
-basado en el cifrado de Cesar utilizando una clave Fibonacci.'''
+basado en el cifrado de Cesar utilizando una clave de la secuencia Fibonacci.'''
 
 def main():
     # Pedir al usuario que ingrese un numero de inicio para la secuencia
@@ -18,7 +18,7 @@ def main():
     message = input("Enter a message to encrypt: ")
 
     # Llamar a la funcion para cifrar el mensaje usando la clave de cifrado generada
-    encrypted_message = encryp_message(message, key)
+    encrypted_message = encrypt_message(message, key)
     # Mostrar el mensaje cifrado y la clave de cifrado generada
     print("Encrypted message:", encrypted_message)
     print("Encryption key:", key)
@@ -34,7 +34,7 @@ def generate_fibonacci(start, length):
         fibonacci.append(b)
     return fibonacci
 
-def encryp_message(message, key):
+def encrypt_message(message, key):
     # Cifrar el mensaje usando la clave de cifrado generada
     encrypted_message = ""
     for letter in message:
